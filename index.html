@@ -16,10 +16,10 @@
 	</head>
 	<body>
 		<div id="home" data-role="page">
-			<div id="header" data-role="header">
+			<div data-role="header">
 				<h1>project sky-pencil</h1>
-			</div><!-- /div#header -->
-			<div id="main" data-role="content">
+			</div>
+			<div data-role="content">
 				<h3>about</h3>
 				<p class="comment">ここは趣味プログラマellerのウェブサイトです。活動内容をまとめることを目的に作成しています。</p>
 				<h3>weblog</h3>
@@ -49,29 +49,8 @@
 					<dt><a href="td.html">TowerDefence</a></dt>
 					<dd>HTML5+CSS3+JSキャッチアップ用のシンプルな実装。</dd>
 				</dl>
-				<h3>link</h3>
-				<dl>
-					<dt>Recommended sites for Java users</dt>
-					<dd>
-						<ul class="comma_separated">
-							<li><a href="http://java.sun.com/docs/books/jls/third_edition/html/j3TOC.html">The Java Language Specification, Third Edition</a></li>
-							<li><a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">The JavaTM Virtual Machine Specification, Second Edition</a></li>
-						</ul>
-					</dd>
-					<dt>Recommended sites for HSP3 users</dt>
-					<dd>
-						<ul class="comma_separated">
-							<li><a href="http://hsp.tv/">HSPTV!</a></li>
-							<li><a href="http://hspdev-wiki.net/">HSP開発Wiki</a></li>
-							<li><a href="http://lhsp.s206.xrea.com/">Let&#39;s HSP!</a></li>
-							<li><a href="http://s1.shard.jp/arisa/">Arisa 1n Wonderland</a></li>
-							<li><a href="http://homepage3.nifty.com/ghpk/">GHP（仮）</a></li>
-							<li><a href="http://space.geocities.jp/digital_clock_2006/">ずざざん　ざん♪</a></li>
-						</ul>
-					</dd>
-				</dl>
-			</div><!-- /div#main -->
-			<div id="footer" data-role="footer">
+			</div>
+			<div data-role="footer">
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
@@ -80,7 +59,37 @@
 					</ul>
 				</div>
 				<h4>copyright&copy; eller 2009-2012.</h4>
-			</div><!-- /div#footer -->
+			</div>
 		</div><!-- /div#home -->
+		<div id="link" data-role="page">
+			<div data-role="header">
+				<h1>project sky-pencil</h1>
+			</div>
+			<div data-role="content">
+				<h2>link</h2>
+				<ul data-role="listview" data-inset="true">
+					<li data-role="list-divider">Recommended sites for Java users</li>
+					<li><a href="http://java.sun.com/docs/books/jls/third_edition/html/j3TOC.html">The Java Language Specification, Third Edition</a></li>
+					<li><a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">The JavaTM Virtual Machine Specification, Second Edition</a></li>
+					<li data-role="list-divider">Recommended sites for HSP3 users</li>
+					<li><a href="http://hsp.tv/">HSPTV!</a></li>
+					<li><a href="http://hspdev-wiki.net/">HSP開発Wiki</a></li>
+					<li><a href="http://lhsp.s206.xrea.com/">Let&#39;s HSP!</a></li>
+					<li><a href="http://s1.shard.jp/arisa/">Arisa 1n Wonderland</a></li>
+					<li><a href="http://homepage3.nifty.com/ghpk/">GHP（仮）</a></li>
+					<li><a href="http://space.geocities.jp/digital_clock_2006/">ずざざん　ざん♪</a></li>
+				</ul>
+			</div>
+			<div data-role="footer">
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#project" data-icon="star">Projects</a></li>
+						<li><a href="#link" data-icon="plus" class="ui-btn-active">Links</a></li>
+					</ul>
+				</div>
+				<h4>copyright&copy; eller 2009-2012.</h4>
+			</div>
+		</div><!-- /div#link -->
 	</body>
 </html>
