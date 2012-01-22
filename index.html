@@ -162,7 +162,7 @@
 		<script>
 			$(document).bind('pagebeforechange', function (e, data) {
 				$('a').removeClass('ui-btn-active')
-					.filter('[href="#' + data.toPage[0].id + '"]').addClass('ui-btn-active');
+					.filter('.ui-navbar [href="#' + data.toPage[0].id + '"]').addClass('ui-btn-active');
 			});
 		</script>
 	</body>
