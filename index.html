@@ -1,189 +1,287 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<meta name="author" content="eller">
-		<title>eller&apos;s website</title>
-		<meta property="og:title" content="eller&apos;s website">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://skypencil.jp/">
-		<meta property="fb:admins" content="100001960041950">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
-		<style>
-			.sns-buttons {
-				text-align: center;
-			}
-			.sns-buttons > a {
-				margin-left: 10px;
-			}
-			.sns-buttons > a:first-child {
-				margin-left: 0px;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="home" data-role="page">
-			<div data-role="header">
-				<h1>eller&apos;s website</h1>
-				<div data-role="navbar" data-iconpos="top">
-					<ul>
-						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#project" data-icon="star">Projects</a></li>
-						<li><a href="#link" data-icon="plus">Links</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="content">
-				<p>Hello, my name is <em>eller</em>.
-				I'm a Japanese programmer and live in Singapore.
-				Please enjoy my <a href="#project">projects</a> and contact me via SNSs!</p>
-				<h2>features</h2>
-				<p>I like to use Java/JavaScript for realizing project.
-				Especially I'm interested in the creating games, the architecture of JVM, and the source handling by AST.
-				So the <a href="http://asm.ow2.org/">ObjectWeb ASM</a> and <a href="http://pmd.sourceforge.net/">PMD</a> are my favorite tools.
-				To know what I use them for, please visit my <a href="http://eller86.hatenablog.jp/">blog</a>.</p>
-				<div class="sns-buttons">
-					<a href="https://github.com/eller86/"><img width="48" height="48" alt="GitHub" src="image/github-48x48.png"></a>
-					<a href="http://twitter.com/#!/eller86"><img width="48" height="48" alt="Twitter" src="image/twitter-48x48.png"></a>
-					<a href="http://www.facebook.com/kengo.toda"><img width="48" height="48" alt="Facebook" src="image/facebook-48x48.png"></a>
-				</div>
-			</div>
-			<div data-role="footer">
-				<h4>copyright&copy; <a href="http://twitter.com/#!/eller86">eller</a> 2009-2013<br>
-				icons by <a href="http://paulrobertlloyd.com/2009/06/social_media_icons/">Paul Robert Lloyd</a></h4>
-			</div>
-		</div><!-- /div#home -->
-		<div id="project" data-role="page">
-			<div data-role="header">
-				<h1>eller&apos;s website</h1>
-				<div data-role="navbar" data-iconpos="top">
-					<ul>
-						<li><a href="#home" data-icon="home" data-direction="reverse">Home</a></li>
-						<li><a href="#project" data-icon="star" class="ui-btn-active">Projects</a></li>
-						<li><a href="#link" data-icon="plus">Links</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="content">
-				<ul data-role="listview" data-inset="true">
-					<li data-role="list-divider">HTML5/JavaScript</li>
-					<li><a href="http://jsdo.it/eller86/jvms2">
-						<h3>JVM Simulator</h3>
-						<p>A tool tells you the state of operand stack.</p>
-					</a></li>
-					<li><a href="http://jsdo.it/eller86/vQoG">
-						<h3>Fireforks antiquate</h3>
-						<p>A nostalgic firefork simulator without canvas.</p>
-					</a></li>
-					<li><a href="http://skypencil.jp/press-start/">
-						<h3>PRESS START</h3>
-						<p>providing Rakefile for enchant.js programming.</p>
-					</a></li>
-					<li><a href="http://9leap.net/games/604">
-						<h3>Tower Defence</h3>
-						<p>Simple score attack game without switch backs.</p>
-					</a></li>
-					<li><a href="http://9leap.net/user/eller86">
-						<h3>Other HTML5 games</h3>
-						<p>Simple games for PC/Mac/Mobile on enchant.js.</p>
-					</a></li>
-					<li data-role="list-divider">Java</li>
-					<li><a href="https://github.com/eller86/findbugs-slf4j">
-						<h3>FindBugs Plugin for SLF4J</h3>
-						<p>FindBugs plugin to support SLF4J.</p>
-					</a></li>
-					<li><a href="https://github.com/jenkinsci/regression-report-plugin">
-						<h3>Regression report plugin for Jenkins</h3>
-						<p>Jenkins plugin to report enbugs.</p>
-					</a></li>
-					<li><a href="https://github.com/eller86/ruleset-for-SLF4J">
-						<h3>ruleset for SLF4J</h3>
-						<p>PMD ruleset for logging.</p>
-					</a></li>
-					<li><a href="https://github.com/eller86/maven-jsr305-plugin">
-						<h3>bytecode injection for precondition checks</h3>
-						<p>Create precondition checks from JSR305 annotations.</p>
-					</a></li>
-					<li><a href="https://github.com/eller86/Brainjack">
-						<h3>Brainf*ck on JVM</h3>
-						<p>Simple compiler and interpreter on JVM.</p>
-					</a></li>
-					<li><a href="https://twistoire.appspot.com/">
-						<h3>twistoire (closed)</h3>
-						<p>A follow/remove/list notifier for Twitter.</p>
-					</a></li>
-					<li><a href="https://docs.google.com/Doc?docid=0AVVVshLFecjMZGc2aHNqNTJfMTJmdjUzdDRkdg&amp;hl=ja">
-						<h3>Java Profiling Cheat Sheet</h3>
-						<p>A document about JDK bundled tools.</p>
-					</a></li>
-					<li><a href="https://docs.google.com/present/view?id=dg6hsj52_23cnf39rf3">
-						<h3>Java constructor</h3>
-						<p>Documents about the constructor of Java.</p>
-					</a></li>
-					<li data-role="list-divider">Hot Soup Processor</li>
-					<li><a href="http://hsp.tv/contest2007/list_n1.html#id15">
-						<h3>(X)HTML converter for HSP3</h3>
-						<p>A tool which converts HSP3 scripts to HTML/XHTML.</p>
-					</a></li>
-					<li><a href="https://github.com/eller86/rainbow_ring">
-						<h3>Bounding rainbow ring</h3>
-						<p>A tool just display simulations.</p>
-					</a></li>
-				</ul>
-			</div>
-			<div data-role="footer">
-				<h4>copyright&copy; <a href="http://twitter.com/#!/eller86">eller</a> 2009-2013<br>
-				icons by <a href="http://paulrobertlloyd.com/2009/06/social_media_icons/">Paul Robert Lloyd</a></h4>
-			</div>
-		</div><!-- /div#project -->
-		<div id="link" data-role="page">
-			<div data-role="header">
-				<h1>eller&apos;s website</h1>
-				<div data-role="navbar" data-iconpos="top">
-					<ul>
-						<li><a href="#home" data-icon="home" data-direction="reverse">Home</a></li>
-						<li><a href="#project" data-icon="star" data-direction="reverse">Projects</a></li>
-						<li><a href="#link" data-icon="plus" class="ui-btn-active">Links</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="content">
-				<ul data-role="listview" data-inset="true">
-					<li data-role="list-divider">Recommended sites for JavaScript users</li>
-					<li><a href="http://jsdo.it/eller86">
-						<h3>eller86 at jsdo.it</h3>
-						<p>A famous HTML5 community in Japan.</p>
-						<p>I posted many games and snippets.</p>
-					</a></li>
-					<li data-role="list-divider">Recommended sites for Java users</li>
-					<li><a href="http://docs.oracle.com/javase/specs/"><h3>The Java Language &amp; Virtual Machine Specification</h3></a></li>
-					<li data-role="list-divider">Recommended sites for HSP3 users</li>
-					<li><a href="http://hsp.tv/"><h3>HSPTV!</h3></a></li>
-					<li><a href="http://hspdev-wiki.net/"><h3>HSP開発Wiki</h3></a></li>
-					<li><a href="http://lhsp.s206.xrea.com/"><h3>Let&#39;s HSP!</h3></a></li>
-					<li><a href="http://mclab.uunyan.com/"><h3>GHP（仮）</h3></a></li>
-					<li><a href="http://space.geocities.jp/digital_clock_2006/"><h3>ずざざん　ざん♪</h3></a></li>
-					<li><a href="http://rpen.blogspot.com/"><h3>sample scripts for HSP3</h3></a></li>
-				</ul>
-			</div>
-			<div data-role="footer">
-				<h4>copyright&copy; <a href="http://twitter.com/#!/eller86">eller</a> 2009-2013<br>
-				icons by <a href="http://paulrobertlloyd.com/2009/06/social_media_icons/">Paul Robert Lloyd</a></h4>
-			</div>
-		</div><!-- /div#link -->
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
-		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			$(document).bind('pagebeforechange', function (e, data) {
-				var buttons = $('a').removeClass('ui-btn-active')
-					.filter('.ui-navbar [href="#' + data.toPage[0].id + '"]');
-				if (!buttons.length) {
-					buttons = $('a[href="#home"][data-icon="home"]');
-				}
-				buttons.addClass('ui-btn-active');
-			});
-		</script>
-		<script src="http://s95.cnzz.com/stat.php?id=4762790&web_id=4762790&show=pic" type="text/javascript"></script>
-	</body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Kengo TODA&apos;s web site</title>
+        <meta name="description" content="collection of Kengo TODA&apos;s blog, product and others.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Kengo TODA&apos;s web site</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#whoami">whoami</a></li>
+                        <li><a href="#tech">tech</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <article id="whoami">
+                    <header>
+                        <h1>Welcome to Kengo&apos;s web site</h1>
+                    </header>
+
+                    <p>
+                        Hi, thanks for your visiting my site.
+                        This site explains about my experience, product and background.
+                    </p>
+
+                    <h2>History as a developer</h2>
+                    <p>
+                        I love software development.
+                    </p>
+                    <p>
+                        When I was 15 years old (at 2001), My parents bought a PC (Windows ME) for me.
+                        I had motivation to make own PC game, but I didn&apos;t know how.
+                        I searched about it, and found that what I need is programming.
+                        This is why I learned about programming.
+                        I enjoyed <a href="http://rpen.blogspot.com/search/label/Game">game programming</a>,
+                        <a href="http://rpen.blogspot.com/search/label/d3module">3D programming</a>,
+                        <a href="http://rpen.blogspot.com/search/label/%E6%96%87%E5%AD%97%E5%88%97%E6%93%8D%E4%BD%9C%E3%83%BB%E8%A7%A3%E6%9E%90">text manipulation</a>,
+                        <a href="http://rpen.blogspot.com/search/label/SQLele">SQLite</a>,
+                        <a href="http://rpen.blogspot.com/search/label/Win32%20API">Win32 API</a>,
+                        <a href="http://rpen.blogspot.com/search/label/%E7%94%BB%E5%83%8F%E3%81%AE%E6%8F%8F%E7%94%BB%E3%83%BB%E7%B7%A8%E9%9B%86">graphic programming</a> and released some free-software.
+                    </p>
+                    <p>
+                        At the same time, I also need to make a web page for my biology club.
+                        That site became very good chance to learn about HTML, CSS and JavaScript.
+                        I didn&apos;t care about responsibility so that site has a lot of <code>onclick</code> attribute
+                        and <code>style</code> attribute. I found why responsibility is important when I built big game like STG and <a href="http://rpen.blogspot.com/2007/08/blog-post_12.html">Tetris</a>.
+                    </p>
+                    <p>
+                        From 2008, I have worked as a professional R&amp;D at <a href="http://worksap.co.jp/">an ERP package vendor</a> in Japan.
+                        I have learned about <a href="#jvm">JVM</a>, <a href="#rdbms">RDBMS</a>, NoSQL, security and <a href="#team">development process improvement</a>.
+                    </p>
+                    <p>
+                        And now I am also responsible for building new office in foreign countries.
+                        I am working &apos;globally&apos;: from 2011 to 2013 at Shanghai (as senior engineer), from 2013 at Singapore (as manager).
+                        What I do is not only guiding new member to understand culture and professionalism, but also helping old member in Japan
+                        to understand new member, new office and communicate with them.
+                    </p>
+
+                    <h2>Personality</h2>
+                    <p>
+                        <a href="http://www.authentichappiness.sas.upenn.edu/">VIA test</a> said that <a href="https://twitter.com/eller86/status/436871253861744641/photo/1">my strengths are love, critical thinking, creativity, industry and humor</a>.
+                        I feel it&apos;s true, it is what I do at my company; use own creativity based on critical thinking with love.
+                    </p>
+                </article>
+
+                <section id="tech">
+                    <header>
+                        <h1>Technology</h1>
+                    </header>
+                    <article id="html5">
+                        <header>
+                            <h2>HTML5</h2>
+                        </header>
+
+                        <p>
+                            For me, HTML5 is good &apos;platform&apos; to provide game and feature to client.
+                        </p>
+                        <p>
+                            Since HTML is designed for documentation, it is not easy to implement application.
+                            And in the world there is a lot of runtime environment... we have to care about OS, browser, size of viewport and input device.
+                            Supporting many environment is difficult for me, so I&apos;m still learning about it.
+                            Now I have experience about <a href="http://eller86.hatenablog.jp/archive/category/javascript">JavaScript</a> and <a href="http://eller86.hatenablog.jp/archive/category/HTML5">HTML5</a>.
+                        </p>
+                        <p>
+                            And about performance, I researched about common solutions like below.
+                            Key point is profiling; we should understand problem first.
+                        </p>
+                        <ul>
+                            <li>how to find the root of problem (development tool, debugger)</li>
+                            <li>how to reduce number of connection (require.js, r.js)</li>
+                            <li>how to reduce reflow and/or redraw</li>
+                        </ul>
+                        <p>
+                            Now I have motivation to learn about how each MVW framework handles performance problem.
+                            Especially about how to reduce communication with server side and how its abstraction consists with performance.
+                        </p>
+
+                        <h3>products</h3>
+                        <ul>
+                            <li><a href="http://jsdo.it/eller86/jvms2">JVM Simulator</a></li>
+                            <li><a href="http://jsdo.it/eller86/vQoG">Fireforks antiquate</a></li>
+                            <li><a href="http://9leap.net/games/604">Tower Defence</a></li>
+                            <li><a href="http://9leap.net/user/eller86">Other HTML5 games</a></li>
+                        </ul>
+
+                        <h3>documents</h3>
+                        <ul>
+                            <li><a href="http://www.slideshare.net/kengotoda/20120218-boostboot-11644795">how to accelerate loading game (Japanese)</a></li>
+                            <li><a href="https://github.com/eller86/requirejs-best-practice">Best practice for RequireJS</a></li>
+                            <li><a href="https://github.com/eller86/slides/blob/master/AMD_and_RequireJS.md">slide</a> and <a href="http://www.youtube.com/watch?v=5C6JOhJcK3Q">video</a> of my session about RequireJS at <a href="http://www.meetup.com/Singapore-JS/">talk.js</a></li>
+                        </ul>
+                    </article>
+
+                    <article id="jvm">
+                        <header>
+                            <h2>JVM</h2>
+                        </header>
+
+                        <p>
+                            I understand basis of <a href="http://docs.oracle.com/javase/specs/">JVMS</a>, coredump &amp; heapdump analyzation, and JVM bytecode.
+                        </p>
+
+                        <p>
+                            With help from VisualVM or JProfiler,
+                            I can profile application (mainly web application) to understand what is bottleneck and/or why it costs much Java heap.
+                            Performance improvement needs knowledge and experience on a wide variety including JVM architecture, algorithm, memory model,
+                            hardware, middleware and library. It is not easy task. My profiling can help my client&apos;s business and my team&apos;s problem solving.
+                        </p>
+
+                        <p>
+                            Reading JVM bytecode is good way to understand running system.
+                            I use <code>javap</code> to read class file.
+
+                        </p>
+
+                        <h3>products</h3>
+                        <ul>
+                            <li><a href="https://github.com/eller86/jsr305-maven-plugin">Bytecode injector for precondition check</a></li>
+                            <li><a href="https://github.com/eller86/Brainjack">Brainf*ck compiler and interpreter on JVM</a></li>
+                            <li><a href="https://twistoire.appspot.com/">Twitter bot and web service (closed)</a></li>
+                        </ul>
+
+                        <h3>documents</h3>
+                        <ul>
+                            <li><a href="https://docs.google.com/Doc?docid=0AVVVshLFecjMZGc2aHNqNTJfMTJmdjUzdDRkdg&hl=ja">Java 6 Profiling Cheat Sheet (Japanese)</a></li>
+                            <li><a href="https://docs.google.com/present/view?id=dg6hsj52_23cnf39rf3">Java constructor (Japanese)</a></li>
+                            <li><a href="http://eller86.hatenablog.jp/entry/2013/12/25/201012">Common trouble around class loader (Japanese)</a></li>
+                            <li><a href="http://eller86.hatenablog.jp/entry/20101121/1290330054">What happen when we call &apos;new&apos; in JVM (Japanese)</a></li>
+                            <li><a href="http://www.slideshare.net/kengotoda/new-in-jvm-what-happen-when-new-is-called">What happen when we call &apos;new&apos; in JVM</a></li>
+                        </ul>
+                    </article>
+
+                    <article id="team">
+                        <header>
+                            <h2>How to make team development effective</h2>
+                        </header>
+
+                        <p>
+                            To make team development, we need a lot of challenge and system including: CI, build process, development process, test automation,
+                            static code analysis, preparing environment automation, and others.
+                        </p>
+                        <p>
+                            I learned about Ant, <a href="http://eller86.hatenablog.jp/archive/category/Maven">Maven</a>, <a href="http://eller86.hatenablog.jp/archive/category/SLF4J">logging</a>, JUnit, QUnit, Jasmine, karma, gruntjs, npm, SVN, Git,
+                            <a href="http://eller86.hatenablog.jp/archive/category/Jenkins">Jenkins</a>, <a href="http://eller86.hatenablog.jp/archive/category/RequireJS">RequireJS</a> (AMD),
+                            Java source analysis (with <a href="http://eller86.hatenablog.jp/archive/category/PMD">PMD</a>) and bytecode manipulation (with <a href="http://eller86.hatenablog.jp/archive/category/ObjectWeb%20ASM">ObjectWeb ASM</a> and <a href="http://eller86.hatenablog.jp/archive/category/FindBugs">FindBugs</a>).
+                            All of them helps me to build good development process, to find regression, to help developer to focus on business, and to shorten source code.
+                        </p>
+                        <p>
+                            And communication (not only meeting but also 1on1, chat, mail, video chat etc.) is the key point to build good relationship, trust, atmosphere and product.
+                            I'm thinking about my ideal team and having discussion with boss, other leaders and teammates.
+                        </p>
+
+                        <h3>products</h3>
+                        <ul>
+                            <li><a href="https://github.com/eller86/findbugs-slf4j">FindBugs plugin for SLF4J</a></li>
+                            <li><a href="https://github.com/WorksApplications/findbugs-plugin">FindBugs plugin for huge J2EE project</a></li>
+                            <li><a href="https://wiki.jenkins-ci.org/display/JENKINS/Regression+Report+Plugin">Jenkins plugin to report regression</a></li>
+                        </ul>
+
+                        <h3>documents</h3>
+                        <ul>
+                            <li><a href="https://github.com/eller86/what-is-maven">Unofficial Maven introduction (Japanese)</a></li>
+                            <li><a href="http://eller86.hatenablog.jp/entry/2013/03/17/130743">What you should care about SLF4J when you distribtue library (Japanese)</a></li>
+                            <li><a href="http://eller86.hatenablog.jp/entry/2013/04/09/215724">Distribtue development environment by Vagrant to welcome contributor to your OSS (Japanese)</a></li>
+                            <li><a href="http://eller86.hatenablog.jp/entry/2014/03/02/141002">How we have to make our mind to work with multinational team (Japanese)</a></li>
+                        </ul>
+                    </article>
+
+                    <section id="other-tech">
+                        <header>
+                            <h2>Others</h2>
+                        </header>
+
+                        <p>
+                            Here I will introduce some products and document about other genres.
+                            I have experience as HSP programmer, Oracle Database trouble shooter and DB2 Database trouble shooter.
+                        </p>
+
+                        <article is="hsp">
+                            <header>
+                                <h3>Hot Soup Processor</h3>
+                            </header>
+
+                            <p>
+                                <a href="http://en.wikipedia.org/wiki/Hot_Soup_Processor">Hot Soup Processor (HSP)</a> is a programming language like BASIC.
+                                Here is <a href="http://rpen.blogspot.com/">my old blog</a> about HSP3, and <a href="http://hspwiki.hinekure.net/eller.html">my profile in HSP community</a>.
+                            </p>
+                            <p>
+                                HSP helped me to understand the greatness of modular program, sub-routine (<code>gosub</code> is really greater than <code>goto</code>) and OOP.
+                            </p>
+                            <ul>
+                                <li><a href="http://hsp.tv/contest2007/list_n1.html#id15">(X)HTML converter for HSP3</a></li>
+                                <li><a href="https://github.com/eller86/rainbow_ring">Bounding rainbow ring</a></li>
+                            </ul>
+                        </article>
+
+                        <article id="rdbms">
+                            <header>
+                                <h3>RDBMS</h3>
+                            </header>
+
+                            <p>
+                                RDBMS is very important component of web enterprise application. It can be bottleneck, and key factor to help business.
+                                For enterprise developer, it is very important to understand how it parses SQL, how it decide execution plan, how it manages memory, how it manages files
+                                and what DBA should care.
+                            </p>
+                        </article>
+                    </section>
+                </section>
+
+                <article id="contact">
+                    <header>
+                        <h1>Contact</h1>
+                    </header>
+
+                    <address>
+                        <p>To contact, please use SNS or send a mail to <a href="mailto:skypencil@gmail.com">my mail address</a>.</p>
+
+                        <ul id="sns-icon">
+                            <li><a href="https://github.com/eller86/"><img src="image/github-48x48.png" height="48" weight="48" alt="GitHub" /></a></li>
+                            <li><a href="http://twitter.com/eller86"><img src="image/twitter-48x48.png" height="48" weight="48" alt="Twitter" /></a></li>
+                            <li><a href="https://www.facebook.com/kengo.toda"><img src="image/facebook-48x48.png" height="48" weight="48" alt="Facebook" /></a></li>
+                        </ul>
+                    </address>
+                </article>
+            </div> <!-- #main -->
+
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>copyright&copy; 2009-2014 Kengo TODA (eller86)</h3>
+            </footer>
+        </div>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-16698566-1');ga('send','pageview');
+        </script>
+    </body>
 </html>
