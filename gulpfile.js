@@ -9,11 +9,16 @@ gulp.task('minify-css', function () {
   return gulp.src(['css/normalize.min.css', 'css/main.css'])
     .pipe(concat('all.css'))
     .pipe(minifyCss())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('.'));
 });
 
 gulp.task('minify-html', function () {
   return gulp.src('html/*.html')
     .pipe(minifyHtml())
     .pipe(gulp.dest('.'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('css/*.css', ['minify-css']);
+  gulp.watch('html/*.html', ['minify-html']);
 });
