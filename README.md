@@ -1,7 +1,5 @@
 # Home page of Kengo TODA the FOSS hacker
 
-
-
 ## About Start Bootstrap
 
 This site uses [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
