@@ -1,22 +1,22 @@
-# Home page of Kengo TODA the FOSS hacker
+# README v0.2.0
 
-## About Start Bootstrap
+This file explains how to use Kengo TODA in your business.
 
-This site uses [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
+## Basic Guideline
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+1. TODA as management wants to be open for teammates and others. Feel free to ask questions and to give opinions/feedback.
+2. TODA is always free. Even when he is sitting and typing some, he should be free. Do not hesitate to disturb his typing.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+## Tech stack
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+<img alt="https://www.kengo-toda.jp/" style="float: right;" src="img/qr.png" title="QR code for the homepage" width=240 height=240>
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+As a FOSS developer, TODA contributed many products from 15 years old such as: Jenkins Plugin, Maven Plugin, Gradle Plugin, PMD Plugin, SpotBugs (FindBugs) Plugin, Google Errorprone Plugin, and more. He is also good at JVM bytecode manipulation, performance tuning, development workflow, and unit-testing.
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Scan the QR code at the right side for detail.
 
-### Copyright and License for Start Bootstrap
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+## General Schedule
+    09:00-10:00 Side Projects
+    10:00-12:30 Project Management Stuff
+    12:30-14:00 Lunch
+    14:00-17:30 Coding, Coaching or Educating
