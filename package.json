@@ -1,29 +1,20 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
+    "title": "KengoTODA.github.io",
+    "name": "kengotoda-resume",
     "version": "4.1.1",
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "private": true,
+    "description": "My home page based on startbootstrap-resume",
+    "homepage": "https://www.kengo-toda.jp/",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/KengoTODA/KengoTODA.github.io/issues"
     },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "Kengo TODA",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "git@github.com:KengoTODA/KengoTODA.github.io.git"
+    },
+    "scripts": {
+      "build": "gulp"
     },
     "dependencies": {
         "bootstrap": "4.3.1",
