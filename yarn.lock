@@ -3572,10 +3572,10 @@ signal-exit@^3.0.0:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-simple-line-icons@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/simple-line-icons/-/simple-line-icons-2.5.2.tgz#77f7c59cb1b68771fd8261e8c96e00a00136dbb4"
-  integrity sha512-JwpHvSsFhLH96Q6gzUtVAPhUNkDwmTTJlrC4KXgkqLjdY++aWbO05mrqWHCMbarqt8lNsZRWeJxWNiqZthkb4Q==
+simple-line-icons@^2.5.5:
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/simple-line-icons/-/simple-line-icons-2.5.5.tgz#32ea1babd842a28cc1764537ba5535e0b8f42be7"
+  integrity sha512-v52iGG/qFZTSD/70yOfA1lYoN6zmjEfDjzFT6U6jNSCsh/aeVjy+8sYyTXWz1w7tLIkN2XeMmG+cLJp/0zYK4Q==
   dependencies:
     less "^3.12.2"
 
