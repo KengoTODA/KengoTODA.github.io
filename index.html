@@ -10,19 +10,13 @@
 
     <title>Kengo TODA, a FOSS developer that loves static code analysis and web service development</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
@@ -48,9 +42,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <li class="nav-item">
+          <!--li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
+          </li-->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
@@ -70,40 +64,12 @@
           </div>
           <p class="mb-5">I am an enterprise Java application developer. I'm also playing with JavaScript and Rust.<br>
           Motivated to make daily hacking enjoyable with build automation, CI, static analysis and virtualization.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/kengo.toda">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/Kengo_TODA/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://linkedin.com/in/kengo-toda-b8772889/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/KengoTODA/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
+          <div class="social-icons">
+            <a class="social-icon" href="https://linkedin.com/in/kengo-toda-b8772889/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/KengoTODA/"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://twitter.com/Kengo_TODA/"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com/kengo.toda"><i class="fab fa-facebook-f"></i></a>
+          </div>
         </div>
       </section>
 
@@ -113,18 +79,83 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="https://spotbugs.github.io/">SpotBugs</a></h3>
-              <div class="subheading mb-3">The spiritual successor of FindBugs</div>
-              <p>Contributing as a core member, mainly working on <a href="http://spotbugs.readthedocs.io/">documentation</a>,
-                <a href="https://github.com/spotbugs/spotbugs-archetype">archetype for plugin developers</a>,
-                <a href="https://travis-ci.org/spotbugs/">build on Travis CI</a>, deploy onto Maven Central, deploy onto Eclipse update site, and bugfix.</p>
+              <h3 class="mb-0"><a href="https://github.com/KengoTODA/readthedocs-action">Unofficial GitHub Action for ReadTheDocs</a></h3>
+              <div class="subheading mb-3">Tackle routines work around doc-review in pull requests</div>
+              <p>Documentation with <a href="http://readthedocs.org/">ReadTheDocs</a> is really nice, because
+                It lets us integrate documentation process to development workflow.
+                This GitHub Action automates several tasks around documentation review, to encourage
+                team to collaborate.
+              </p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Nov 2016 - Present</span>
-            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Jan 2021 - Present
+            </span></div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://github.com/spotbugs/spotbugs-gradle-plugin">new SpotBugs Gradle plugin</a></h3>
+              <div class="subheading mb-3">The official Gradle Plugin to run SpotBugs on Java and Android project</div>
+              <p>Developed a new Gradle plugin (v4.0.0) from scratch.
+                It supports latest Gradle API like cachable task, lazy configuration, task config avoidance, and <a href="https://dev.to/kengotoda/tips-to-implement-gradle-plugin-8d6">worker API</a> for performance.
+              </p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Mar 2020 - Present
+            </span></div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://github.com/KengoTODA/gradle-semantic-release-plugin">gradle semantic-release plugin</a></h3>
+              <div class="subheading mb-3">Yet another gradle-semantic-release-plugin that invokes Gradle wrapper script to release</div>
+              <p>Bring <a href="https://semantic-release.gitbook.io/semantic-release/">semantic-release</a> even to the Gradle project.
+                Best match to library project that needs to follow <a href="https://semver.org/spec/v2.0.0.html">SemVer2</a> and automate the release process for rapid development lifecycle.
+              </p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Mar 2019 - Present
+            </span></div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://github.com/KengoTODA/javadocky">Javadocky</a></h3>
+              <div class="subheading mb-3">An OSS clone of javadoc.io</div>
+              <p>A playground to code with new technologies and best practices.
+              It uses spring-boot, spring-webflux, selenide, Gradle, Checkerframework, Google Errorprone and docker-compose.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Jun 2017 - Present
+            </span></div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://maven3.kengo-toda.jp/">What is Maven (ebook written in Japanese)</a></h3>
+              <div class="subheading mb-3">Introduction for Japanese newbies</div>
+              <p>An opensource ebook based on <a href="https://www.gitbook.com/">GitBook</a>.
+              You can get free copy at <a href="https://legacy.gitbook.com/book/kengotoda/what-is-maven/details">GitBook</a>, or purchase at Amazon's Kindle Direct Publishing.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Jun 2017 - Present
+            </span></div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://spotbugs.github.io/">SpotBugs</a></h3>
+              <div class="subheading mb-3">The spiritual successor of FindBugs</div>
+              <p>Contributing as a core member, mainly working on bugfix, <a href="http://spotbugs.readthedocs.io/">documentation</a>,
+                <a href="https://github.com/spotbugs/spotbugs-archetype">archetype for plugin developers</a>,
+                build on GitHub Actions, deploy onto Maven Central, deploy onto Eclipse update site.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Nov 2016 - Present
+            </span></div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><a href="https://github.com/KengoTODA/findbugs-slf4j">FindBugs Plugin</a>,
                 <a href="https://github.com/KengoTODA/findbugs-slf4j/tree/master/sonar-plugin">SonarQube Plugin</a> &amp;
@@ -135,60 +166,36 @@
                 like <a href="https://github.com/KengoTODA/findbugs-slf4j#slf4j_place_holder_mismatch">placeholder mismatch</a>.
                 It also contributes to improve readability of log messages, by <a href="https://github.com/KengoTODA/findbugs-slf4j#slf4j_sign_only_format">eliminating non human readable message</a>.</p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Nov 2012 - Present</span>
-            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Nov 2012 - Present
+            </span></div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><a href="https://github.com/KengoTODA/guava-helper-for-java-8">Guava helper for Java 8</a></h3>
               <div class="subheading mb-3">Migrate your code from legacy Guava to Java 8</div>
               <p>Personal project that provides library for Google Guava Collection to work with Java 8 Stream API.
               It also provides SpotBugs plugin and SonarQube plugin, to detect usage of legacy parts in Guava like Optional.</p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jul 2015 - Present</span>
-            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Jul 2015 - Feb 2021
+            </span></div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="https://github.com/KengoTODA/javadocky">Javadocky</a></h3>
-              <div class="subheading mb-3">An OSS clone of javadoc.io</div>
-              <p>A playground to code with new technologies and best practices.
-              It uses spring-boot, spring-webflux, selenide, Gradle, Checkerframework, Google Errorprone and docker-compose.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jun 2017 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="https://maven3.kengo-toda.jp/">What is Maven (ebook written in Japanese)</a></h3>
-              <div class="subheading mb-3">Introduction for Japanese newbies</div>
-              <p>An opensource ebook based on <a href="https://www.gitbook.com/">GitBook</a>.
-              You can get free copy at <a href="https://legacy.gitbook.com/book/kengotoda/what-is-maven/details">GitBook</a>, or purchase at Amazon's Kindle Direct Publishing.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jun 2017 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><a href="https://plugins.jenkins.io/regression-report-plugin">Jenkins Regression Report Plugin</a></h3>
               <div class="subheading mb-3">Report newly created enbugs from tons of failing test</div>
               <p>This plugin sends a mail if your test cases find regression (new failure).
               It is useful when your project has many failing tests and developers have got used to ignore them.</p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jun 2012 - Apr 2016</span>
-            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              Jun 2012 - Apr 2016
+            </span></div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Twistoire</h3>
               <div class="subheading mb-3">Notice when follower removes you</div>
@@ -197,113 +204,76 @@
                 Analysis part is kicked by cron via TaskQueue, and runs on Backends.
                 It used Twitter4J to check diff of followers, and send direct message to users.</p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2010 – Jan 2012</span>
-            </div>
+            <div class="flex-shrink-0"><span class="text-primary">
+              May 2010 – Jan 2012
+            </span></div>
           </div>
 
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-opensource"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-java"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-github"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-markdown"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-raspberry_pi"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-heroku"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-travis"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-eclipse"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-rust"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-aws"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-docker"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Development Process</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Managing Cross Functional Teams, based on the culture of FOSS</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Continuous Integration with Maven, Gradle, npm, grunt, Jenkins and Travis CI</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Maintainable code based on DI, spring-boot and Selenium/Selenide</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              TDD with JUnit 4, JUnit 5, TestNG</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Performance tuning for RDBMS, KVS, server-side application and web pages</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages & Tools</div>
+            <ul class="list-inline dev-icons">
+                <li class="list-inline-item"><i class="fab fa-osi"></i></li>
+                <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                <li class="list-inline-item"><i class="fab fa-markdown"></i></li>
+                <li class="list-inline-item"><i class="fab fa-rust"></i></li>
+                <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+            </ul>
+            <div class="subheading mb-3">Workflow</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Managing Cross Functional Teams, based on the culture of FOSS
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Continuous Integration with Maven, Gradle, npm, Jenkins, Travis CI and GitHub Actions
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Maintainable code based on DI, spring-boot and Selenium/Selenide
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Performance tuning for RDBMS, KVS, server-side application and web pages
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fas fa-check"></i></span>
+                  Agile Development &amp; Scrum
+              </li>
+            </ul>
         </div>
       </section>
+      <!-- TODO experience -->
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <p>Visit <a href="https://www.linkedin.com/in/kengo-toda-b8772889/">Linkedin profile</a> for detail.</p>
+      <!-- Interests-->
+      <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <p>I like hacking, especially static code analysis that supports stability and scalability of daily development.
+              I also developed several plugins for Maven, Jenkins, SpotBugs, SonarQube, Google Errorprone, GitHub Actions and more to make daily hacking comfortable.</p>
         </div>
       </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>I like hacking, especially static code analysis that supports stability and scalability of daily development.
-          I also developed several plugins for Maven, Jenkins, SpotBugs/FindBugs, SonarQube, Google Errorprone and more to make daily hacking comfortable.</p>
-        </div>
-      </section>
-
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 
 </html>
