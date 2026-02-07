@@ -1,0 +1,40 @@
+plugins:
+  - jekyll-remote-theme
+remote_theme: yaoyao-liu/minimal-light@a42649d2e0a0586bd8aa9c5e63f876f5b3a0fc95
+
+# Basic Information 
+title: Kengo TODA
+position: VP of Technology at Henry, Inc.
+email: contact@kengo-toda.jp
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: 医療情報技師,情報処理安全確保支援士,静的解析,プログラマ,inspequte
+description: 基幹システム開発者 ならびに OSSエンジニア としてのKengo TODAの情報をまとめたサイトです
+canonical: https://www.kengo-toda.jp/
+
+# Links 
+# If you don't need one of them, you may delete the corresponding line.
+github_link: https://github.com/KengoTODA/
+linkedin: https://www.linkedin.com/in/kengo-toda-b8772889
+twitter: https://x.com/Kengo_TODA
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: ./img/profile.jpg
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+# You may use the option to disable the automatic dark theme
+auto_dark_mode: true
+
+# Font
+# You can use this option to choose between Serif or Sans Serif fonts.
+font: "Serif" # or "Sans Serif"
+
+# Google Analytics ID
+# Please remove this if you don't use Google Analytics
+google_analytics: G-WCQZK1HMQ5

@@ -1,4 +1,4 @@
-# README v0.2.0
+# README v0.3.0
 
 This file explains how to use Kengo TODA in your business.
 
@@ -9,11 +9,7 @@ This file explains how to use Kengo TODA in your business.
 
 ## Tech stack
 
-<img alt="https://www.kengo-toda.jp/" style="float: right;" src="img/qr.png" title="QR code for the homepage" width=240 height=240>
-
 As a FOSS developer, TODA contributed many products from 15 years old such as: Jenkins Plugin, Maven Plugin, Gradle Plugin, PMD Plugin, SpotBugs (FindBugs) Plugin, Google Errorprone Plugin, and more. He is also good at JVM bytecode manipulation, performance tuning, development workflow, and unit-testing.
-
-Scan the QR code at the right side for detail.
 
 ## General Schedule
     09:00-10:00 Side Projects
