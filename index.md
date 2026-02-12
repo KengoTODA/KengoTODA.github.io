@@ -11,7 +11,7 @@ layout: homepage
 
 ## Personal Products
 
-- [高速 class ファイル解析ツール inspequte](https://github.com/KengoTODA/inspequte/)
+- [高速 class ファイル解析ツール inspequte](https://www.kengo-toda.jp/inspequte/)
 - [gradle-semantic-release プラグイン](https://github.com/KengoTODA/gradle-semantic-release-plugin)
 - [Google Errorprone SLF4J プラグイン](https://github.com/KengoTODA/errorprone-slf4j)
 - [SpotBugs Gradle プラグイン](https://github.com/spotbugs/spotbugs-gradle-plugin)
