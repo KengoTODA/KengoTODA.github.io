@@ -24,7 +24,7 @@ jobs:
         with:
           ruby-version: '4.0.1'
           bundler: '4.0.19'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Build with Jekyll
         run: |
