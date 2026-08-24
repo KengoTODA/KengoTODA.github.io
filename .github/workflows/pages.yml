@@ -3,6 +3,8 @@ name: Build & Deploy (Jekyll from _site)
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 permissions:
   contents: write
@@ -20,7 +22,8 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@09a7688d3b55cf0e976497ff046b70949eeaccfd # v1.288.0
         with:
-          ruby-version: '3.4.10'
+          ruby-version: '4.0.1'
+          bundler: '4.0.19'
           bundler-cache: true
 
       - name: Build with Jekyll
@@ -28,7 +31,12 @@ jobs:
           bundle install
           bundle exec jekyll build
 
+      - name: Show lockfile changes
+        if: github.event_name == 'pull_request'
+        run: git diff -- Gemfile.lock
+
       - name: Deploy to gh-pages
+        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
