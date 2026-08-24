@@ -24,16 +24,12 @@ jobs:
         with:
           ruby-version: '4.0.1'
           bundler: '4.0.19'
-          bundler-cache: false
+          bundler-cache: true
 
       - name: Build with Jekyll
         run: |
           bundle install
           bundle exec jekyll build
-
-      - name: Show lockfile changes
-        if: github.event_name == 'pull_request'
-        run: git diff -- Gemfile.lock
 
       - name: Deploy to gh-pages
         if: github.event_name == 'push'
