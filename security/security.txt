@@ -1,0 +1,7 @@
+Contact: mailto:security@kengo-toda.jp
+Contact: mailto:skypencil+security@gmail.com
+Encryption: https://www.kengo-toda.jp/security/pgp-key.txt
+Expires: 2027-12-31T04:00:00.000Z
+Preferred-Languages: ja,en
+Canonical: https://www.kengo-toda.jp/.well-known/security.txt
+

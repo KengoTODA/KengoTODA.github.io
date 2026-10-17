@@ -6,6 +6,9 @@ remote_theme: yaoyao-liu/minimal-light@1ea07f39518ac44644406380c83da6f89037c4fc
 include:
   - .well-known
 
+exclude:
+  - security/security.txt
+
 # Basic Information 
 title: Kengo TODA
 position: Executive Officer at Henry, Inc.
