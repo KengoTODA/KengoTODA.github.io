@@ -1,10 +1,14 @@
 plugins:
   - jekyll-remote-theme
-remote_theme: yaoyao-liu/minimal-light@a42649d2e0a0586bd8aa9c5e63f876f5b3a0fc95
+remote_theme: yaoyao-liu/minimal-light@1ea07f39518ac44644406380c83da6f89037c4fc
+
+# Include the security contact file in the generated site.
+include:
+  - .well-known
 
 # Basic Information 
 title: Kengo TODA
-position: VP of Technology at Henry, Inc.
+position: Executive Officer at Henry, Inc.
 email: contact@kengo-toda.jp
 
 # Search Engine Optimization (SEO)
