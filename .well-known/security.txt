@@ -1,5 +1,24 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Contact: mailto:security@kengo-toda.jp
 Contact: mailto:skypencil+security@gmail.com
+Encryption: https://www.kengo-toda.jp/security/pgp-key.txt
 Expires: 2027-12-31T04:00:00.000Z
 Preferred-Languages: ja,en
 Canonical: https://www.kengo-toda.jp/.well-known/security.txt
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE2HjUqCPq5zG3KdGo0hUReKEjyX8FAmrTOE8ACgkQ0hUReKEj
+yX9v4Av+O9LiAWvtIqenWRtSIX5f41wA3yfr99A3O5Aj61f9S+ZpVdiGJ2/AMBOP
+5PVHwaiXS7z9QVGE8bHshYb+ReLeUcNOf3i32Q8Coo5VRGvy1d4Zjtp9F/P4eGG0
+qMgsVc8zee5AZqU5PlykHNzHdJ9ONTBDR6xBKbM11OiePGg0BmHreCqldUsDCA6r
+RgbLkA60Ko67rHtletsFd5xQ0yioYZbvhnOiXLWl6F44sMlfYXval1Y5Vph8Lsu+
++mPls2AwKOIRBjrl7cK8VoKVtIO4i1aIbRkQoeUguZKWkmokjyrml69D91akt77f
+MdGBS6oEAIn5FPn6/Ik7zbmkgJwWgCLZ03JsWzE3mvlxnodlWhyAbeQMLzKoDEce
+2lHL6JGeErra38RNjSDf4OEsByfkQlAeL3tTV8aZbmY2QRha06BKWQnTbiz3waqm
+7TBy8EBmwZ/DgnbN65JH/SGsbeIYp3gEkaaaHG/s3ShyIkje90S3WLr7ZTFOzAfm
+MiSCXfcQ
+=xWkS
+-----END PGP SIGNATURE-----
