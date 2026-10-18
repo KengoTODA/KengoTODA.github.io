@@ -13,6 +13,6 @@ This file explains how to use Kengo TODA in your business.
 $ gpg --local-user D878D4A823EAE731B729D1A8D2151178A123C97F \
   --digest-algo SHA512 \
   --output .well-known/security.txt \
-  --clearsign security/security.txt &&
+  --clearsign security/security.txt
 $ gpg --verify .well-known/security.txt
 ```
